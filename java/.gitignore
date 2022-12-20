@@ -1,6 +1,10 @@
 #idea folder
 .idea
 
+
+#Java project file
 java.iml
 
+
+#out folder
 out
