@@ -1,4 +1,4 @@
-public class variables {
+public class Variables {
     public static void main(String[] args) {
         byte myByte = 115;
         System.out.println(myByte);
@@ -11,7 +11,7 @@ public class variables {
         double myDouble = 88.46;
         boolean isTrue = true;
         boolean isFalse = false;
-        char myChar = '/u0500';
+        char myChar = '/';
         System.out.println("myChar = " + myChar);
         String myName = "Olga";
         System.out.println("myName = " + myName);
