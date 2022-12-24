@@ -14,6 +14,8 @@ public class IncDec {
         a--;
         System.out.println("a = " + a);
         System.out.println("a = " + ++a);
+        --a;
+        System.out.println("a = " + a);
 
     }
 }
