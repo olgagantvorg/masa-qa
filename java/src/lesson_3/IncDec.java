@@ -13,6 +13,7 @@ public class IncDec {
         System.out.println("a = " + a);
         a--;
         System.out.println("a = " + a);
+        System.out.println("a = " + ++a);
 
     }
 }
