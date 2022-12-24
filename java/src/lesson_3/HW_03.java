@@ -14,9 +14,9 @@ public class HW_03 {
         int a = 5;
         int b = 8;
         int superA = a-- - --a + ++a + a++ + a;
-        System.out.println("superA = " + superA); //15
+        System.out.println("superA = " + superA); //15=4-3+4+5+5
         int superB = ++b - b++ + ++b - --b;
-        System.out.println("superB = " + superB); //1 хотя superB = 9-10+11-10
+        System.out.println("superB = " + superB); //1=9-9+11-10
 
 
         // task 2
