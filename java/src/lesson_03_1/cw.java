@@ -6,7 +6,14 @@ public class cw {
     public static void main(String[] args) {
     String name = "Olga";
     String name2 = "olGa";
-    Scanner input = new Scanner(System.in);
+    String anotherName = "Olga";
+    System.out.println(name == anotherName);
+    String newName = new String("Olga");
+    System.out.println(name == newName);
+    boolean areEquel = name.equals(name2);
+    System.out.println("areEquel = " + areEquel);
+
+        Scanner input = new Scanner(System.in);
     System.out.println("Введите свой возраст..");
     int age = input.nextInt();
     if (age >= 18){
