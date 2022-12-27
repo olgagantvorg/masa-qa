@@ -12,14 +12,22 @@ public class cw {
     System.out.println(name == newName);
     boolean areEquel = name.equals(name2);
     System.out.println("areEquel = " + areEquel);
+    areEquel = newName.equals(name2);
+    System.out.println("areEquel = " + areEquel);
+    areEquel = name2.equalsIgnoreCase(name);
+    System.out.println("areEquel = " + areEquel);
 
-        Scanner input = new Scanner(System.in);
+
+    Scanner input = new Scanner(System.in);
     System.out.println("Введите свой возраст..");
     int age = input.nextInt();
     if (age >= 18){
         System.out.println("You are adult ");
         }
-    else {
+    else if (age == 18) {
+        System.out.println("You can buy alcohol");
+
+    } else {
         System.out.println("You are young ");
         }
     }
