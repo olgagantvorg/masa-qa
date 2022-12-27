@@ -13,5 +13,6 @@ public class check {
         else {
             System.out.println("Число " + number + " четное");
         }
+
     }
 }

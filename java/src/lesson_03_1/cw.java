@@ -21,6 +21,7 @@ public class cw {
     Scanner input = new Scanner(System.in);
     System.out.println("Введите свой возраст..");
     int age = input.nextInt();
+    String alco;
     if (age >= 18){
         System.out.println("You are adult ");
         }
@@ -30,5 +31,7 @@ public class cw {
     } else {
         System.out.println("You are young ");
         }
+        alco = (age == 18) ? "you can buy beer" : (age < 18) ? "you can't buy alcohol" : "you can buy everything";
+        System.out.println(alco);
     }
 }
