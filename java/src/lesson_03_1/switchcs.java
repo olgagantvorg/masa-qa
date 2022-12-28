@@ -22,16 +22,6 @@ public class switchcs {
         }
         input.close();
     }
-
-    public static class UserSystem {
-        public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
-            String username = "Admin";
-            String password = "P@ssword";
-            System.out.println("Enter username ");
-            String yourName = input.nextLine();
-            yourName =
-
-        }
-    }
 }
+
+
