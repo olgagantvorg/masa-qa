@@ -22,8 +22,11 @@ public class UserSystem {
             System.out.println("There is no user with this name");
         }
 
+       input.close();
+
 
     }
+
 }
 
 
