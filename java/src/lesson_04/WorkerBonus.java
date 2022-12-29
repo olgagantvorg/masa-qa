@@ -33,5 +33,7 @@ public class WorkerBonus {
         }
         System.out.println("Bonus amount is " + (bonus * sal - sal ));
         System.out.println("New salary is "+ (bonus * sal));
+        input.close();
     }
+
 }
