@@ -20,7 +20,7 @@ public class UserSystem_2 {
                         System.out.println("Welcome to personal section!");
                     } else {
                         triesPass += 1;
-                        System.out.println("Sorry, try again . You have " + (5 - triesPass) + " attemps to entet password.");
+                        System.out.println("Sorry, try again . You have " + (5 - triesPass) + " attemps to enter password.");
                     }
                 }
             }
