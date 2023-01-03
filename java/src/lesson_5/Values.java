@@ -10,8 +10,11 @@ public class Values {
             array[i] = random.nextInt(30);
         }
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                System.out.println("array[i] = " + array[i]);
+            if (array[i] == 0) {
+                System.out.println("We have 0 here " + array[i]);
+            }
+            else {
+                System.out.println(array[i] + " is not 0");
             }
             
         }
