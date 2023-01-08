@@ -1,6 +1,7 @@
 package lesson_5.collections;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class PassAndNames {
     public static void main(String[] args) {
@@ -15,6 +16,13 @@ public class PassAndNames {
 //        System.out.println(passAndNames.containsKey(11112424));
 //        System.out.println(passAndNames.containsValue(" "));
 //        System.out.println(passAndNames.containsValue("Alex"));
+
+        for (Map.Entry<Integer, String> pairof : passAndNames.entrySet()){
+            System.out.println(pairof.getKey() + " " + pairof.getValue());
+        }
+        passAndNames.forEach((id, name)-> System.out.println(name + " - " + id));
+        passAndNames.put(48899, "Vasya");
+        passAndNames.forEach((id, name)-> System.out.println(name + " - " + id));
 
     }
 }
