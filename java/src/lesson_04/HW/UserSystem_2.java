@@ -7,31 +7,27 @@ public class UserSystem_2 {
         Scanner input = new Scanner(System.in);
         String userName = "Admin";
         String password = "P@ssword";
-        int tries = 0;
-        int triesPass = 0;
-        while (tries < 5) {
+        for (int i = 5; i >= 1; i--) {
             System.out.println("Enter your name: ");
             String yourName = input.nextLine();
             if (yourName.equalsIgnoreCase(userName)) {
-                System.out.println("Enter your pass: ");
-                while (triesPass < 5) {
+                for (int j = 5; j >= 1; j--) {
+                    System.out.println("Enter your pass: ");
                     String yourPass = input.nextLine();
-                    if (password.equalsIgnoreCase(yourPass)) {
+                    if (password.equals(yourPass)) {
                         System.out.println("Welcome to personal section!");
-                    } else {
-                        triesPass += 1;
-                        System.out.println("Sorry, try again . You have " + (5 - triesPass) + " attemps to enter password.");
+                        return;
+                    }
+                    else {
+                        System.out.println("Sorry, try again . You have " + (j-1) + " attemps to enter password.");
                     }
                 }
             }
             else {
-                tries += 1;
-                System.out.println("Sorry, try again . You have " + (5 - tries) + " attemps to enter name.");
+                System.out.println("Sorry, try again . You have " + (i-1) + " attemps to enter name.");
             }
-            }
+                }
         input.close();
 
-                }
-
-
     }
+}
