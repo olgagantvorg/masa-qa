@@ -11,6 +11,7 @@ public class Duplicate {
         for (int i = 0; i < 100; i++) {
             number.add(random.nextInt(50));
         }
+        System.out.println("number.size() = " + number.size());
     }
     }
 
