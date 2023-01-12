@@ -30,6 +30,7 @@ public class AreArraysEquel {
         System.out.println("This two arrays are the same. Is it true?  " + arraysEqual(array, array2));
         System.out.println("This two arrays are the same. Is it true?  " + arraysEqual2(array,array2));
         System.out.println("This two arrays are the same. Is it true?  " + arraysEqual3(array,array2));
+        input.close();
     }
 
     public static boolean arraysEqual(int [] array1, int [] array2){
