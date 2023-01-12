@@ -7,12 +7,12 @@ import java.util.stream.IntStream;
 public class AreArraysEquel {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int array[] = new int[10];
-        int array2[] = new int[10];
         System.out.println("Enter amount of numbers for first array ");
         int amountArray = input.nextInt();
+        int array[] = new int[amountArray];
         System.out.println("Enter amount of numbers for second array ");
-        int amountArray2 = input.nextInt();
+        int amountArray2= input.nextInt();
+        int array2[] = new int[amountArray2];
         for (int i = 0; i < amountArray; i++) {
             System.out.println("Enter numbers for first array. You need to enter " + (amountArray - i) + " numbers");
             array[i] = input.nextInt();
