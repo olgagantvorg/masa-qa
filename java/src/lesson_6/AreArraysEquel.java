@@ -29,17 +29,31 @@ public class AreArraysEquel {
         }
         System.out.println("This two arrays are the same. Is it true?  " + arraysEqual(array, array2));
         System.out.println("This two arrays are the same. Is it true?  " + arraysEqual2(array,array2));
+        System.out.println("This two arrays are the same. Is it true?  " + arraysEqual3(array,array2));
     }
 
     public static boolean arraysEqual(int [] array1, int [] array2){
-        if (Arrays.equals(array1,array2)){
-            return true;
-        }
-        return false;
+        return Arrays.equals(array1,array2);
     }
 
     public static boolean arraysEqual2(int [] array1, int [] array2){
         return IntStream.range(0, array1.length).noneMatch(i -> array2[i] != array1[i]);
         }
+
+
+    public static boolean arraysEqual3(int [] array1, int [] array2){
+        if (array2.length == array1.length){
+            for (int i = 0; i < array2.length; i++) {
+                if (array2[i] != array1[i]) {
+                    return false;
+            }
+            }
+
+        }
+        return true;
     }
+
+    }
+
+
 
