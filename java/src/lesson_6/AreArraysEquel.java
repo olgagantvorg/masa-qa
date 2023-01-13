@@ -34,10 +34,14 @@ public class AreArraysEquel {
     }
 
     public static boolean arraysEqual(int [] array1, int [] array2){
+
         return Arrays.equals(array1,array2);
     }
 
     public static boolean arraysEqual2(int [] array1, int [] array2){
+        if (array2.length != array1.length) {
+            return false;
+        }
         return IntStream.range(0, array1.length).noneMatch(i -> array2[i] != array1[i]);
         }
 
@@ -49,8 +53,10 @@ public class AreArraysEquel {
                     return false;
             }
             }
-
+        } else {
+            return false;
         }
+
         return true;
     }
 

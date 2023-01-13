@@ -22,6 +22,7 @@ public class UserSystem_2 {
                         System.out.println("Sorry, try again . You have " + (j-1) + " attemps to enter password.");
                     }
                 }
+
             }
             else {
                 System.out.println("Sorry, try again . You have " + (i-1) + " attemps to enter name.");
