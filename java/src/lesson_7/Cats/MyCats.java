@@ -19,6 +19,7 @@ public class MyCats {
        catList.add(new Cat("Persik","grey",1));
        count++;
        catList.forEach(cat -> System.out.println(cat));
+       catList.forEach(Cat::sayMeow);
 
        System.out.println("Number of cats " + count);
 
