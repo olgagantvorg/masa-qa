@@ -4,21 +4,18 @@ import java.util.Scanner;
 
 public class HomeTask {
     public static void main(String[] args) {
-        convertString("Ckkdf");
+        Scanner scanner = new Scanner(System.in);
+        int amount = scanner.nextInt();
+        for (int i = 0; i < 3 ; i++) {
+            double sum = amount*0.1;
+            amount-=sum;
+
+        }
+        System.out.println(amount);
+
 
     }
-    public static String convertString(String words){
 
-
-        if (Character.isUpperCase(words.charAt(0))){
-            return words;
-        }
-        else if (words.isEmpty()){
-            return "";
-        }
-        else{
-            return "no";
-        }
     }
 
-}
+

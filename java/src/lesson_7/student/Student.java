@@ -6,12 +6,13 @@ public class Student {
 
         private String name;
         private int age;
-        private Scanner input;
+        private Scanner input = new Scanner(System.in);
+
 
     public Student(String name, int age) {
         while (age < 18 || age > 100){
-            System.out.println("Your age " + age + " is not valid. Try again......");
-            input = new Scanner(System.in);
+            System.out.println("Your age " + age + " is not valid.Try again......");
+
             age = input.nextInt();
 
         }
@@ -20,6 +21,15 @@ public class Student {
 
 
 
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", input=" + input +
+                '}';
     }
 
     public String getName() {
@@ -35,14 +45,14 @@ public class Student {
     }
 
     public void setAge(int age) {
-        this.age = age;
+
+        while (age < 18 || age > 100) {
+            System.out.println("Your age " + age + " is not valid. Try Again...   ");
+
+            age = input.nextInt();
+
+        }this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
+
 }
