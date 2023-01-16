@@ -14,6 +14,7 @@ public class StudentMain {
         System.out.println(alex.getName());
         alex.setAge(45);
         alex.setName("Vasya");
+        alex.setAge(15);
         System.out.println(alex);
         alex.setAge(-1);
         System.out.println(alex);
