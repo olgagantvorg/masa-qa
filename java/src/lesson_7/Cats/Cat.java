@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Cat {
 
     Scanner input = new Scanner(System.in);
-    String name;
-    String colour;
-    int age;
+    private String name;
+    private String colour;
+    private int age;
+
 
     public Cat(String name,String colour,int age){
         this.name = name;
@@ -19,7 +20,8 @@ public class Cat {
         }
     }
     public void sayMeow() {
-        System.out.println("Meow!");
+
+        System.out.println("Cat " + name + " says 'Meow'!");
     }
 
 
