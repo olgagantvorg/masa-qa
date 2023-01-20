@@ -1,4 +1,6 @@
-package lesson_9;
+package lesson_9.person;
+
+import lesson_9.person.Person;
 
 public class Student extends Person {
     public double grade;
@@ -20,5 +22,10 @@ public class Student extends Person {
     @Override
     public void whatIsyourName() {
         System.out.println("I am a student my name is " + getFirstName());
+    }
+
+    @Override
+    public void whoAreYou() {
+        System.out.println("I am a student");
     }
 }

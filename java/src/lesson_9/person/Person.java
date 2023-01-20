@@ -1,6 +1,6 @@
-package lesson_9;
+package lesson_9.person;
 
-public class Person {
+public abstract class Person {
     private String firstName;
     private String lastName;
     private int age;
@@ -48,8 +48,9 @@ public class Person {
                 ", isJewish=" + isJewish +
                 '}';
     }
-    @Override
+
     public void whatIsyourName(){
         System.out.println("My name is " + firstName +" "+ lastName);
     }
+    public abstract void whoAreYou();
 }
