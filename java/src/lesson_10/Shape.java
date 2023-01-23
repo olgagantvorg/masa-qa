@@ -13,9 +13,15 @@ public abstract class Shape {
     }
 
     /**
-     *
-     * @return
+     * Method calculates area
+     * @return calculator area of the shape
      */
-    public abstract double calculatorArea();
+    public abstract double calculateArea();
     public abstract double perimetr();
+
+    @Override
+    public String toString() {
+        return "color='" + color + '\'' +
+                '}';
+    }
 }

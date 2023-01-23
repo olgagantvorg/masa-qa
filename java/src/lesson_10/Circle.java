@@ -1,13 +1,13 @@
 package lesson_10;
 
-public class Sqare extends Shape {
-    private double side;
+public class Circle extends Shape{
 
-    public Sqare(String color, double side) {
+    private double radius;
+
+    public Circle(String color, double radius) {
         super(color);
-        this.side = side;
+        this.radius = radius;
     }
-
 
     /**
      * Method calculates area
@@ -16,18 +16,19 @@ public class Sqare extends Shape {
      */
     @Override
     public double calculateArea() {
-        return side*side;
+        return Math.pow(radius,2)*Math.PI;
     }
 
     @Override
     public double perimetr() {
-        return side*4;
+
+        return radius*Math.PI*2;
     }
 
     @Override
     public String toString() {
-        return "Sqare{" +
-                "side=" + side +
+        return "Circle{" +
+                "radius=" + radius +
                 " " + super.toString();
     }
 }
