@@ -7,4 +7,5 @@ public class ModiefierMain {
         defaultClass defaultClass = new defaultClass();
      ///   System.out.println(defaultClass.name); default access modifier
     }
+    ProtectedClass.
 }
