@@ -5,22 +5,22 @@ import java.util.List;
 
 public class MyPrints {
     public static void main(String[] args) {
-        List <Printable> library = new ArrayList<>();
+        List <IPrintable> library = new ArrayList<>();
         library.add(new Book(36));
         library.add(new Book(57));
         library.add(new Magazines(250));
         library.add(new Magazines(110));
 
-        Printable[] library2 = new Printable[]{
+        IPrintable[] library2 = new IPrintable[]{
                 new Magazines(1450),
                 new Book(1200)
         };
-        for (Printable printable:library2){
-            printable.howManyPages();
+        for (IPrintable printable:library2){
+            printable.howManyPages(((Printable)printable).getPages());
             printable.printYourType();
         }
         library.forEach(printable -> {
-            printable.howManyPages();
+            printable.howManyPages(((Printable)printable).getPages());
             printable.printYourType();
         });
 

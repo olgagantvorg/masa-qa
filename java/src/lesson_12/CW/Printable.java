@@ -1,14 +1,18 @@
 package lesson_12.CW;
 
-public interface Printable {
+public abstract class Printable implements IPrintable{
 
-    int PAGES = 500;
+    private int pages;
 
-    void printYourType();
-    default void howManyPages(){
-        System.out.println("I have " + PAGES + "pages");
+    public Printable(int pages) {
+        this.pages = pages;
+    }
 
-    };
+    public int getPages() {
+        return pages;
+    }
 
-
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
 }
