@@ -14,7 +14,7 @@ public class Book extends Printable {
 
 
 
-    public Book(int pages, int PAGES) {
+    public Book(int pages) {
         super(pages);
     }
 
