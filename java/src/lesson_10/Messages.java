@@ -1,6 +1,5 @@
 package lesson_10;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Messages {
@@ -28,5 +27,30 @@ public class Messages {
         }
         list.forEach(shape -> System.out.println(shape));
     }
+    public static void printCalculatePerimetr (List <Shape> list) {
+        double sum = 0;
+        if (list.size() == 0) {
+            System.out.println("You have no shapes");
+            return;
+        } else {
+            for (Shape shape : list) {
+                sum += shape.perimetr();
+            }
+        }
+        System.out.println("This is sum of perimetrs " +sum);
+    }
 
+    public static void printCalculateArea (List <Shape> list) {
+        double sum = 0;
+        if (list.size() == 0) {
+            System.out.println("You have no shapes");
+            return;
+        } else {
+            for (Shape shape : list) {
+                sum += shape.calculateArea();
+            }
+        }
+        System.out.println("This is sum of calculate areas " +sum);
+    }
 }
+

@@ -2,7 +2,7 @@ package lesson_12;
 
 import lesson_12.animals.Interfaces.Breathable;
 
-public class Snake extends Animal implements Breathable {
+public class Snake extends Animal {
     @Override
     public void howManyLegs() {
         System.out.println("I am a snake, i have no legs...");

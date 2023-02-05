@@ -23,9 +23,17 @@ public class MyShapes {
                             System.out.println("Enter square side");
                             collectionOfShapes.add(new Sqare(color,input.nextDouble()));
                             break;
+                        case 2:
+                            System.out.println("Enter rectangle wight and height");
+                            collectionOfShapes.add(new Rectangle(color, input.nextDouble(), input.nextDouble()));
+                            break;
                         case 3:
                             System.out.println("Enter circle radius");
                             collectionOfShapes.add(new Circle(color,input.nextDouble()));
+                            break;
+                        case 4:
+                            System.out.println("Enter right triangle");
+                            collectionOfShapes.add(new RightTriangle(color, input.nextDouble()));
                             break;
                     }
                     break;
@@ -33,8 +41,10 @@ public class MyShapes {
                     Messages.printCollectrion(collectionOfShapes);
                     break;
                 case 3:
+                    Messages.printCalculatePerimetr(collectionOfShapes);
                     break;
                 case 4:
+                    Messages.printCalculateArea(collectionOfShapes);
                     break;
                 case 5:
                     break;
