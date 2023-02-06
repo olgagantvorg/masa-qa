@@ -32,8 +32,8 @@ public class MyShapes {
                             collectionOfShapes.add(new Circle(color,input.nextDouble()));
                             break;
                         case 4:
-                            System.out.println("Enter side of triangle");
-                            collectionOfShapes.add(new RightTriangle(color, input.nextDouble()));
+                            System.out.println("Enter 2 legs of triangle and hypotenuse of triangle");
+                            collectionOfShapes.add(new RightTriangle(color, input.nextDouble(),input.nextDouble(),input.nextDouble()));
                             break;
                     }
                     break;

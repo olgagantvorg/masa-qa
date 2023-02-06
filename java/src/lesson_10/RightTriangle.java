@@ -1,11 +1,15 @@
 package lesson_10;
 
 public class RightTriangle extends Shape{
-    private double side;
+    private double legFirst;
+    private double legSecong;
+    private double hypotenuse;
 
-    public RightTriangle(String color, double side) {
+    public RightTriangle(String color, double side1, double side2, double side3) {
         super(color);
-        this.side = side;
+        this.legFirst = side1;
+        this.legSecong = side2;
+        this.hypotenuse = side3;
     }
 
     /**
@@ -15,19 +19,22 @@ public class RightTriangle extends Shape{
      */
     @Override
     public double calculateArea() {
-        return side*side*Math.sqrt(0.75);
+        return 0.5*(legFirst * legSecong);
     }
 
     @Override
     public double perimetr() {
 
-        return 3*side;
+        return legFirst + legSecong + hypotenuse;
     }
+
 
     @Override
     public String toString() {
         return "RightTriangle{" +
-                "side=" + side +
+                "first leg=" + legFirst +
+                ", second leg=" + legSecong +
+                ", hypotenuse=" + hypotenuse +
                 " " + super.toString();
     }
 }
