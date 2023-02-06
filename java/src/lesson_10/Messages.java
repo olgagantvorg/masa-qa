@@ -30,27 +30,61 @@ public class Messages {
     public static void printCalculatePerimetr (List <Shape> list) {
         double sum = 0;
         if (list.size() == 0) {
-            System.out.println("You have no shapes");
+            System.out.println("There are no shapes in list.");
             return;
         } else {
             for (Shape shape : list) {
                 sum += shape.perimetr();
             }
         }
-        System.out.println("This is sum of perimetrs " +sum);
+        System.out.println("The sum of perimetrs is " +sum);
     }
 
     public static void printCalculateArea (List <Shape> list) {
         double sum = 0;
         if (list.size() == 0) {
-            System.out.println("You have no shapes");
+            System.out.println("There are no shapes in list.");
             return;
         } else {
             for (Shape shape : list) {
                 sum += shape.calculateArea();
             }
         }
-        System.out.println("This is sum of calculate areas " +sum);
+        System.out.println("The sum of areas is " +sum);
+    }
+
+    public static void printBigPerimetr(List<Shape> list){
+        double maxValue = 0;
+        if (list.size() == 0) {
+            System.out.println("There are no shapes in list.");
+            return;
+        }
+        else {
+            for (Shape shape: list){
+                if (shape.perimetr() > maxValue){
+                    maxValue = shape.perimetr();
+                }
+            }
+        }
+        System.out.println("The biggest perimetr of all shapes is " + maxValue);
+
+    }
+
+    public static void printBigCalculateArea(List<Shape> list){
+        double maxValue = 0;
+        if (list.size() == 0){
+            System.out.println("There are no shapes in list.");
+            return;
+        }
+        else {
+            for (Shape shape: list){
+                if (shape.calculateArea() > maxValue){
+                    maxValue = shape.calculateArea();
+                }
+            }
+        }
+        System.out.println("The biggest area of all shapes is " + maxValue);
+
     }
 }
 

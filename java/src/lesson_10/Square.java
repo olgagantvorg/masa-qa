@@ -1,9 +1,9 @@
 package lesson_10;
 
-public class Sqare extends Shape {
+public class Square extends Shape {
     private double side;
 
-    public Sqare(String color, double side) {
+    public Square(String color, double side) {
         super(color);
         this.side = side;
     }

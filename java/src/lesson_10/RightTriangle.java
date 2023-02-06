@@ -15,11 +15,12 @@ public class RightTriangle extends Shape{
      */
     @Override
     public double calculateArea() {
-        return side*side;
+        return side*side*Math.sqrt(0.75);
     }
 
     @Override
     public double perimetr() {
+
         return 3*side;
     }
 
@@ -27,6 +28,6 @@ public class RightTriangle extends Shape{
     public String toString() {
         return "RightTriangle{" +
                 "side=" + side +
-                "} " + super.toString();
+                " " + super.toString();
     }
 }

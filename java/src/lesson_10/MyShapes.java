@@ -21,7 +21,7 @@ public class MyShapes {
                     switch (soption){
                         case 1:
                             System.out.println("Enter square side");
-                            collectionOfShapes.add(new Sqare(color,input.nextDouble()));
+                            collectionOfShapes.add(new Square(color,input.nextDouble()));
                             break;
                         case 2:
                             System.out.println("Enter rectangle wight and height");
@@ -32,7 +32,7 @@ public class MyShapes {
                             collectionOfShapes.add(new Circle(color,input.nextDouble()));
                             break;
                         case 4:
-                            System.out.println("Enter right triangle");
+                            System.out.println("Enter side of triangle");
                             collectionOfShapes.add(new RightTriangle(color, input.nextDouble()));
                             break;
                     }
@@ -47,8 +47,10 @@ public class MyShapes {
                     Messages.printCalculateArea(collectionOfShapes);
                     break;
                 case 5:
+                    Messages.printBigPerimetr(collectionOfShapes);
                     break;
                 case 6:
+                    Messages.printBigCalculateArea(collectionOfShapes);
                     break;
                 case 7:
                     System.out.println("Exiting");
@@ -59,6 +61,7 @@ public class MyShapes {
 
         }
         System.out.println("Good bye...");
+        input.close();
     }
 
 
