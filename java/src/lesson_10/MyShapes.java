@@ -8,14 +8,14 @@ public class MyShapes {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         List<Shape> collectionOfShapes=new ArrayList<>();
-        Messages.printMaiMenu();
-        int option = input.nextInt();
+        Messages.printMainMenu();
+        int option = Messages.optionMainMenu();
         while (option>0 && option<8){
             System.out.println("You have chosen "+option);
             switch (option){
                 case 1:
                     Messages.printShapesMenu();
-                    int soption = input.nextInt();
+                    int soption = Messages.optionShapeMenu();
                     System.out.println("Choose your color:");
                     String color = input.next();
                     switch (soption){
@@ -56,7 +56,7 @@ public class MyShapes {
                     System.out.println("Exiting");
                     return;
             }
-            Messages.printMaiMenu();
+            Messages.printMainMenu();
             option = input.nextInt();
 
         }
