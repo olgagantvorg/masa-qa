@@ -1,9 +1,8 @@
 package lesson_13;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-
+///ctrl alt o убирать ненужные импорты
 public class Exception_01_Controlled_Throws {
     public static void main(String[] args) throws Exception {
         File ourFile = new File("D://file.txt");
