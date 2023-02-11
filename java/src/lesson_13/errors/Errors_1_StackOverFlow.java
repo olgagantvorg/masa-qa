@@ -1,6 +1,6 @@
-package lesson_13;
+package lesson_13.errors;
 
-public class StackOverFlow {
+public class Errors_1_StackOverFlow {
     public static void main(String[] args) {
         calculate(10);
 

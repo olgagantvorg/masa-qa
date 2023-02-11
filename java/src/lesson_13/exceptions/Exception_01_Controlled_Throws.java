@@ -1,4 +1,4 @@
-package lesson_13;
+package lesson_13.exceptions;
 
 import java.io.File;
 import java.io.FileReader;

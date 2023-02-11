@@ -1,9 +1,6 @@
-package lesson_13;
+package lesson_13.exceptions;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-public class Exception_04_UncontrolledBounce {
+public class Exception_04_UncontrolledOutOfBounce {
     public static void main(String[] args) {
         int [] array = new int[5];
         System.out.println("Starting program.....");

@@ -1,4 +1,4 @@
-package lesson_13;
+package lesson_13.exceptions;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -12,6 +12,7 @@ public class Exception_03_Runtime {
         try {
             System.out.println("What is your age?");
             int age = input.nextInt();
+            System.out.println("age = " + age);
         }
         catch (InputMismatchException exception){
             System.out.println("Это тест про возраст");
